@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.plan-text {
+    text-align: center;
+}
+
+#date {
+    text-align: center;
+}
+
+.event {
+   margin: 5px;
+}
+
+.bigger {
+    background-color: lightcoral;
+    width: 50%;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+/* .orange {
+    background: orange;
+} */

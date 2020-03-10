@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Planner</title>
+    <link rel="stylesheet" href="../Day-Planner/style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="jumbotron">
+                <p class="plan-text">DAY PLANNER</p>
+                <h4 id="date"></h4>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">1 a.m.</div>
+                <div class="col-md-8 border border-dark oneAm">
+                    <input id="makeEvent" type="text" placeholder="WRITE EVENT HERE" class="event"
+                        onfocus="this.value=''" value=""></input><span id="printEvent"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">2 a.m.</div>
+                <div class="col-md-8 border border-dark twoAm">
+                    <input id="makeEvent-2" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent-2"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit-2" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">3 a.m.</div>
+                <div class="col-md-8 border border-dark threePm">
+                    <input id="makeEvent-3" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent-3"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit-3" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">4 a.m.</div>
+                <div class="col-md-8 border border-dark fourAm">
+                    <input id="makeEvent-4" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent-4"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit-4" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">5 a.m.</div>
+                <div class="col-md-8 border border-dark fiveAm">
+                    <input id="makeEvent-5" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent-5"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit-5" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">6 a.m.</div>
+                <div class="col-md-8 border border-dark sixAm">
+                    <input id="makeEvent-6" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent-6"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit-6" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">7 a.m.</div>
+                <div class="col-md-8 border border-dark sevenAm">
+                    <input id="makeEvent-7" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent-7"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit-7" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">8 a.m.</div>
+                <div class="col-md-8 border border-dark eightAm">
+                    <input id="makeEvent-8" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent-8"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit-8" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">9 a.m.</div>
+                <div class="col-md-8 border border-dark nineAm">
+                    <input id="makeEvent-9" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent-9"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit-9" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">10 a.m.</div>
+                <div class="col-md-8 border border-dark tenAm">
+                    <input id="makeEvent-10" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent-10"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit-10" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark elevenAm">11 a.m.</div>
+                <div class="col-md-8 border border-dark">
+                    <input id="makeEvent-11" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent-11"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit-11" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">12 a.m.</div>
+                <div class="col-md-8 border border-dark orange twelveAm">
+                    <input id="makeEvent-12" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent-12"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit-12" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">1 p.m.</div>
+                <div class="col-md-8 border border-dark onePm">
+                    <input id="makeEvent-12" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent-12"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit-12" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">2 p.m.</div>
+                <div class="col-md-8 border border-dark twoPm">
+                    <input id="makeEvent-13" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent-13"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit-13" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">3 p.m.</div>
+                <div class="col-md-8 border border-dark threePm">
+                    <input id="makeEvent-14" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent-14"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit-14" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">4 p.m.</div>
+                <div class="col-md-8 border border-dark fourPm">
+                    <input id="makeEvent-15" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent-15"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit-15" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">5 p.m.</div>
+                <div class="col-md-8 border border-dark fivePm">
+                    <input id="makeEvent-16" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent-16"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit-16" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">6 p.m.</div>
+                <div class="col-md-8 border border-dark sixPm">
+                    <input id="makeEvent" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">7 p.m.</div>
+                <div class="col-md-8 border border-dark sevenPm">
+                    <input id="makeEvent" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">8 p.m.</div>
+                <div class="col-md-8 border border-dark eightPm">
+                    <input id="makeEvent" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">9 p.m.</div>
+                <div class="col-md-8 border border-dark ninePm">
+                    <input id="makeEvent" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">10 p.m.</div>
+                <div class="col-md-8 border border-dark tenPm">
+                    <input id="makeEvent" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">11 p.m.</div>
+                <div class="col-md-8 border border-dark elevenPm">
+                    <input id="makeEvent" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit" class="bigger">Add</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 border border-dark">12 a.m.</div>
+                <div class="col-md-8 border border-dark twelveAm">
+                    <input id="makeEvent" type="text" placeholder="WRITE EVENT HERE" class="event" onfocus="this.value=''" value=""></input><span
+                        id="printEvent"></span>
+                </div>
+                <div id="newEvent" class="col-md-2 border border-dark">
+                    <button id="commit" class="bigger">Add</button>
+                </div>
+            </div>
+
+        </div>
+        <script>
+
+
+            var m = moment();
+            console.log(m);
+            var h4 = document.getElementById("date");
+            console.log(h4);
+            h4.innerHTML = m.format("DD MMMM YYYY");
+            var commitBtn = document.querySelector("#commit");
+            commitBtn.addEventListener("click", function () {
+                var makeEvent = document.getElementById('makeEvent').value;
+                var printEvent = document.getElementById('printEvent');
+                printEvent.append(makeEvent);
+            });
+
+            var commitBtn2 = document.querySelector("#commit-2");
+
+            commitBtn2.addEventListener("click", function () {
+                var makeEvent2 = document.getElementById('makeEvent-2').value;
+                var printEvent2 = document.getElementById('printEvent-2');
+                printEvent2.append(makeEvent2);
+            });
+
+            var commitBtn3 = document.querySelector("#commit-3");
+
+            commitBtn3.addEventListener("click", function () {
+                var makeEvent3 = document.getElementById('makeEvent-3').value;
+                var printEvent3 = document.getElementById('printEvent-3');
+                printEvent3.append(makeEvent3);
+            });
+
+            var commitBtn4 = document.querySelector("#commit-4");
+
+            commitBtn4.addEventListener("click", function () {
+                var makeEvent4 = document.getElementById('makeEvent-4').value;
+                var printEvent4 = document.getElementById('printEvent-4');
+                printEvent4.append(makeEvent4);
+            });
+
+            var commitBtn5 = document.querySelector("#commit-5");
+
+            commitBtn5.addEventListener("click", function () {
+                var makeEvent5 = document.getElementById('makeEvent-5').value;
+                var printEvent5 = document.getElementById('printEvent-5');
+                printEvent5.append(makeEvent5);
+            });
+
+            var commitBtn6 = document.querySelector("#commit-6");
+
+            commitBtn6.addEventListener("click", function () {
+                var makeEvent6 = document.getElementById('makeEvent-6').value;
+                var printEvent6 = document.getElementById('printEvent-6');
+                printEvent6.append(makeEvent6);
+            });
+
+
+            var commitBtn7 = document.querySelector("#commit-7");
+
+            commitBtn7.addEventListener("click", function () {
+                var makeEvent7 = document.getElementById('makeEvent-7').value;
+                var printEvent7 = document.getElementById('printEvent-7');
+                printEvent7.append(makeEvent7);
+            });
+
+            var commitBtn8 = document.querySelector("#commit-8");
+
+            commitBtn8.addEventListener("click", function () {
+                var makeEvent8 = document.getElementById('makeEvent-8').value;
+                var printEvent8 = document.getElementById('printEvent-8');
+                printEvent8.append(makeEvent8);
+            });
+
+            var commitBtn9 = document.querySelector("#commit-9");
+
+            commitBtn9.addEventListener("click", function () {
+                var makeEvent9 = document.getElementById('makeEvent-9').value;
+                var printEvent9 = document.getElementById('printEvent-9');
+                printEvent9.append(makeEvent9);
+            });
+
+
+            var commitBtn10 = document.querySelector("#commit-10");
+
+            commitBtn10.addEventListener("click", function () {
+                var makeEvent10 = document.getElementById('makeEvent-10').value;
+                var printEvent10 = document.getElementById('printEvent-10');
+                printEvent10.append(makeEvent10);
+            });
+
+            var commitBtn11 = document.querySelector("#commit-11");
+
+            commitBtn11.addEventListener("click", function () {
+                var makeEvent11 = document.getElementById('makeEvent-11').value;
+                var printEvent11 = document.getElementById('printEvent-11');
+                printEvent11.append(makeEvent11);
+            });
+            
+            var commitBtn12 = document.querySelector("#commit-12");
+
+            commitBtn12.addEventListener("click", function () {
+                var makeEvent12 = document.getElementById('makeEvent-12').value;
+                var printEvent12 = document.getElementById('printEvent-12');
+                printEvent12.append(makeEvent12);
+            });
+
+            var commitBtn13 = document.querySelector("#commit-13");
+
+            commitBtn13.addEventListener("click", function () {
+                var makeEvent13 = document.getElementById('makeEvent-13').value;
+                var printEvent13 = document.getElementById('printEvent-13');
+                printEvent13.append(makeEvent13);
+            });
+
+            var commitBtn14 = document.querySelector("#commit-14");
+
+            commitBtn14.addEventListener("click", function () {
+                var makeEvent14 = document.getElementById('makeEvent-14').value;
+                var printEvent14 = document.getElementById('printEvent-14');
+                printEvent14.append(makeEvent14);
+            });
+
+            var commitBtn15 = document.querySelector("#commit-15");
+
+            commitBtn15.addEventListener("click", function () {
+                var makeEvent15 = document.getElementById('makeEvent-15').value;
+                var printEvent15 = document.getElementById('printEvent-15');
+                printEvent15.append(makeEvent15);
+            });
+
+            var commitBtn16 = document.querySelector("#commit-16");
+
+            commitBtn16.addEventListener("click", function () {
+                var makeEvent16 = document.getElementById('makeEvent-16').value;
+                var printEvent16 = document.getElementById('printEvent-16');
+                printEvent16.append(makeEvent16);
+            });
+
+            var commitBtn10 = document.querySelector("#commit-10");
+
+            commitBtn10.addEventListener("click", function () {
+                var makeEvent10 = document.getElementById('makeEvent-10').value;
+                var printEvent10 = document.getElementById('printEvent-10');
+                printEvent10.append(makeEvent10);
+            });
+
+        </script>
+</body>
+
+</html>
