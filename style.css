@@ -17,12 +17,41 @@
 }
 
 .bigger {
+     
     background-color: lightcoral;
     width: 50%;
     margin-top: 5px;
     margin-left: 40px;
 }
 
+.timePad {
+    padding-top: 5px;
+}
+
+.plan-text {
+    font-family: 'Righteous', cursive;
+    font-size: 36px;
+}
+
+body {
+    background: url("../Day-Planner/images/pattern.png");
+}
+
+.jumbotron {
+    background-color: lightskyblue;
+}
+
+.past {
+    background: grey;
+}
+
+.present {
+    background: red;
+}
+
+.future {
+    background: green;
+}
 /* .orange {
     background: orange;
 } */

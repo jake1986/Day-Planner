@@ -8,29 +8,32 @@
     <link rel="stylesheet" href="../Day-Planner/style.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
     <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="container">
-            <div class="jumbotron">
+            <div class="jumbotron jumboColor">
                 <p class="plan-text">DAY PLANNER</p>
                 <h4 id="date"></h4>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">1 a.m.</div>
+                <div id="first-time" class="col-md-2 border border-dark timePad" value="1">1:00 a.m.</div>
                 <div class="col-md-8 border border-dark oneAm">
                     <input id="makeEvent" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent"></span>
                 </div>
                 <div id="newEvent" class="col-md-2 border border-dark">
+                    <!-- <p id="commit" class="bigger">Add</p> -->
                     <button id="commit" class="bigger">Add</button>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">2 a.m.</div>
+                <div id="second-time" class="col-md-2 border border-dark timePad" value="2">2:00 a.m.</div>
                 <div class="col-md-8 border border-dark twoAm">
                     <input id="makeEvent-2" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-2"></span>
@@ -40,7 +43,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">3 a.m.</div>
+                <div class="col-md-2 border border-dark timePad" value="3">3:00 a.m.</div>
                 <div class="col-md-8 border border-dark threePm">
                     <input id="makeEvent-3" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-3"></span>
@@ -50,7 +53,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">4 a.m.</div>
+                <div class="col-md-2 border border-dark timePad" value="4">4:00 a.m.</div>
                 <div class="col-md-8 border border-dark fourAm">
                     <input id="makeEvent-4" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-4"></span>
@@ -60,7 +63,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">5 a.m.</div>
+                <div class="col-md-2 border border-dark timePad" value="5">5:00 a.m.</div>
                 <div class="col-md-8 border border-dark fiveAm">
                     <input id="makeEvent-5" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-5"></span>
@@ -70,7 +73,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">6 a.m.</div>
+                <div class="col-md-2 border border-dark timePad" value="6">6:00 a.m.</div>
                 <div class="col-md-8 border border-dark sixAm">
                     <input id="makeEvent-6" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-6"></span>
@@ -80,7 +83,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">7 a.m.</div>
+                <div class="col-md-2 border border-dark timePad" value="7">7:00 a.m.</div>
                 <div class="col-md-8 border border-dark sevenAm">
                     <input id="makeEvent-7" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-7"></span>
@@ -90,7 +93,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">8 a.m.</div>
+                <div class="col-md-2 border border-dark timePad" value="8">8:00 a.m.</div>
                 <div class="col-md-8 border border-dark eightAm">
                     <input id="makeEvent-8" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-8"></span>
@@ -100,7 +103,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">9 a.m.</div>
+                <div class="col-md-2 border border-dark timePad" value="9">9:00 a.m.</div>
                 <div class="col-md-8 border border-dark nineAm">
                     <input id="makeEvent-9" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-9"></span>
@@ -110,7 +113,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">10 a.m.</div>
+                <div class="col-md-2 border border-dark timePad" value="10">10:00 a.m.</div>
                 <div class="col-md-8 border border-dark tenAm">
                     <input id="makeEvent-10" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-10"></span>
@@ -120,8 +123,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark elevenAm">11 a.m.</div>
-                <div class="col-md-8 border border-dark">
+                <div class="col-md-2 border border-dark timePad" value="11">11:00 a.m.</div>
+                <div class="col-md-8 border border-dark elevenAm">
                     <input id="makeEvent-11" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-11"></span>
                 </div>
@@ -130,7 +133,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">12 a.m.</div>
+                <div class="col-md-2 border border-dark timePad" value="12">12:00 p.m.</div>
                 <div class="col-md-8 border border-dark orange twelveAm">
                     <input id="makeEvent-12" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-12"></span>
@@ -140,7 +143,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">1 p.m.</div>
+                <div class="col-md-2 border border-dark timePad" value="13">1:00 p.m.</div>
                 <div class="col-md-8 border border-dark onePm">
                     <input id="makeEvent-13" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-13"></span>
@@ -150,7 +153,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">2 p.m.</div>
+                <div class="col-md-2 border border-dark timePad" value="14">2:00 p.m.</div>
                 <div class="col-md-8 border border-dark twoPm">
                     <input id="makeEvent-14" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-14"></span>
@@ -160,7 +163,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">3 p.m.</div>
+                <div class="col-md-2 border border-dark timePad" value="15">3:00 p.m.</div>
                 <div class="col-md-8 border border-dark threePm">
                     <input id="makeEvent-15" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-15"></span>
@@ -170,7 +173,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">4 p.m.</div>
+                <div class="col-md-2 border border-dark timePad" value="16">4:00 p.m.</div>
                 <div class="col-md-8 border border-dark fourPm">
                     <input id="makeEvent-16" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-16"></span>
@@ -180,7 +183,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">5 p.m.</div>
+                <div class="col-md-2 border border-dark timePad" value="17">5:00 p.m.</div>
                 <div class="col-md-8 border border-dark fivePm">
                     <input id="makeEvent-17" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-17"></span>
@@ -190,7 +193,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">6 p.m.</div>
+                <div class="col-md-2 border border-dark timePad">6:00 p.m.</div>
                 <div class="col-md-8 border border-dark sixPm">
                     <input id="makeEvent-18" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-18"></span>
@@ -200,7 +203,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">7 p.m.</div>
+                <div class="col-md-2 border border-dark timePad">7:00 p.m.</div>
                 <div class="col-md-8 border border-dark sevenPm">
                     <input id="makeEvent-19" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-19"></span>
@@ -210,7 +213,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">8 p.m.</div>
+                <div class="col-md-2 border border-dark timePad">8:00 p.m.</div>
                 <div class="col-md-8 border border-dark eightPm">
                     <input id="makeEvent-20" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-20"></span>
@@ -220,7 +223,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">9 p.m.</div>
+                <div class="col-md-2 border border-dark timePad">9:00 p.m.</div>
                 <div class="col-md-8 border border-dark ninePm">
                     <input id="makeEvent-21" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-21"></span>
@@ -230,7 +233,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">10 p.m.</div>
+                <div class="col-md-2 border border-dark timePad">10:00 p.m.</div>
                 <div class="col-md-8 border border-dark tenPm">
                     <input id="makeEvent-22" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-22"></span>
@@ -240,7 +243,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">11 p.m.</div>
+                <div class="col-md-2 border border-dark timePad">11:00 p.m.</div>
                 <div class="col-md-8 border border-dark elevenPm">
                     <input id="makeEvent-23" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-23"></span>
@@ -250,7 +253,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 border border-dark">12 a.m.</div>
+                <div class="col-md-2 border border-dark timePad">12:00 a.m.</div>
                 <div class="col-md-8 border border-dark twelveAm">
                     <input id="makeEvent-24" type="text" placeholder="WRITE EVENT HERE" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-24"></span>
@@ -259,7 +262,6 @@
                     <button id="commit-24" class="bigger">Add</button>
                 </div>
             </div>
-
         </div>
         <script>
 
@@ -273,6 +275,7 @@
             commitBtn.addEventListener("click", function () {
                 var makeEvent = document.getElementById('makeEvent').value;
                 var printEvent = document.getElementById('printEvent');
+                printEvent.setAttribute("color", "blue");
                 printEvent.append(makeEvent);
             });
 
@@ -463,7 +466,69 @@
                 printEvent24.append(makeEvent24);
             });
 
+            var currentTime = new Date().getHours();
+
+            var hour = document.querySelector("#hour");
+
+            hour.addEventListener("click", function() {
+                console.log(currentTime);
+            })
+
+            var firstTime = document.getElementById("first-time");
+
+            var hour1 = document.getElementById("hour1");
+
+            hour1.addEventListener("click", function() {
+                console.log("I am working");
+            });
+
+            // This is loop for 1:00 a.m.
             
+        
+            var firstHour = document.getElementsByClassName("timePad");
+           
+            // var getTime = firstHour[0].getAttribute("value");
+
+            // console.log(getTime);
+
+           $('.timePad').each(function() {
+                var getTime = parseInt(this.getAttribute("value"));
+                console.log(getTime);
+                if (currentTime > getTime) {
+                    $(this).addClass("past");
+                } else if (currentTime === getTime) {
+                    $(this).addClass("present");
+                } else {
+                    $(this).addClass("future");
+                }
+            })
+
+            
+
+
+            // var dateTime = document.getElementsByTagName("time");
+
+
+            
+            
+            // if (currentTime > ) { 
+            //     var oneAm = document.querySelector(".oneAm");
+            //     oneAm.setAttribute("background", "grey");
+            //     console.log(dateTime);
+            // };
+
+
+
+            // function changeColor() {
+            //     var oneAm = document.querySelector(".oneAm");
+            //     oneAm.setAttribute("background", "grey");
+            //     console.log(currentTime + " " + dateTime);
+            // }
+
+            // changeColor();
+            
+            // };
+
 
         </script>
 </body>
