@@ -13,7 +13,7 @@
 }
 
 .event {
-   margin: 5px;
+   margin: 15px 15px 15px 10px;
 }
 
 .bigger {
@@ -52,4 +52,21 @@ body {
 
 .future {
     background: green;
+}
+
+.purple {
+    background: purple;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.bold {
+    font-weight: bold;
 }
