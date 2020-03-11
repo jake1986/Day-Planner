@@ -39,6 +39,7 @@ body {
 
 .jumbotron {
     background-color: lightskyblue;
+    margin-top: 25px;
 }
 
 .past {
@@ -52,6 +53,3 @@ body {
 .future {
     background: green;
 }
-/* .orange {
-    background: orange;
-} */

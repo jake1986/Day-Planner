@@ -11,7 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
     <script src="app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,80 +24,9 @@
                 <h4 id="date"></h4>
             </div>
             <div class="row">
-                <div id="first-time" class="col-md-2 border border-dark timePad" value="1">1:00 a.m.</div>
-                <div class="col-md-8 border border-dark oneAm">
-                    <input id="makeEvent" type="text" placeholder="WRITE EVENT HERE" class="event"
-                        onfocus="this.value=''" value=""></input><span id="printEvent"></span>
-                </div>
-                <div id="newEvent" class="col-md-2 border border-dark">
-                    <!-- <p id="commit" class="bigger">Add</p> -->
-                    <button id="commit" class="bigger">Add</button>
-                </div>
-            </div>
-            <div class="row">
-                <div id="second-time" class="col-md-2 border border-dark timePad" value="2">2:00 a.m.</div>
-                <div class="col-md-8 border border-dark twoAm">
-                    <input id="makeEvent-2" type="text" placeholder="WRITE EVENT HERE" class="event"
-                        onfocus="this.value=''" value=""></input><span id="printEvent-2"></span>
-                </div>
-                <div id="newEvent" class="col-md-2 border border-dark">
-                    <button id="commit-2" class="bigger">Add</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 border border-dark timePad" value="3">3:00 a.m.</div>
-                <div class="col-md-8 border border-dark threePm">
-                    <input id="makeEvent-3" type="text" placeholder="WRITE EVENT HERE" class="event"
-                        onfocus="this.value=''" value=""></input><span id="printEvent-3"></span>
-                </div>
-                <div id="newEvent" class="col-md-2 border border-dark">
-                    <button id="commit-3" class="bigger">Add</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 border border-dark timePad" value="4">4:00 a.m.</div>
-                <div class="col-md-8 border border-dark fourAm">
-                    <input id="makeEvent-4" type="text" placeholder="WRITE EVENT HERE" class="event"
-                        onfocus="this.value=''" value=""></input><span id="printEvent-4"></span>
-                </div>
-                <div id="newEvent" class="col-md-2 border border-dark">
-                    <button id="commit-4" class="bigger">Add</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 border border-dark timePad" value="5">5:00 a.m.</div>
-                <div class="col-md-8 border border-dark fiveAm">
-                    <input id="makeEvent-5" type="text" placeholder="WRITE EVENT HERE" class="event"
-                        onfocus="this.value=''" value=""></input><span id="printEvent-5"></span>
-                </div>
-                <div id="newEvent" class="col-md-2 border border-dark">
-                    <button id="commit-5" class="bigger">Add</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 border border-dark timePad" value="6">6:00 a.m.</div>
-                <div class="col-md-8 border border-dark sixAm">
-                    <input id="makeEvent-6" type="text" placeholder="WRITE EVENT HERE" class="event"
-                        onfocus="this.value=''" value=""></input><span id="printEvent-6"></span>
-                </div>
-                <div id="newEvent" class="col-md-2 border border-dark">
-                    <button id="commit-6" class="bigger">Add</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 border border-dark timePad" value="7">7:00 a.m.</div>
-                <div class="col-md-8 border border-dark sevenAm">
-                    <input id="makeEvent-7" type="text" placeholder="WRITE EVENT HERE" class="event"
-                        onfocus="this.value=''" value=""></input><span id="printEvent-7"></span>
-                </div>
-                <div id="newEvent" class="col-md-2 border border-dark">
-                    <button id="commit-7" class="bigger">Add</button>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-md-2 border border-dark timePad" value="8">8:00 a.m.</div>
                 <div class="col-md-8 border border-dark eightAm">
-                    <input id="makeEvent-8" type="text" placeholder="WRITE EVENT HERE" class="event"
+                    <input id="makeEvent-8" type="text" placeholder="ADD YOUR EVENT" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-8"></span>
                 </div>
                 <div id="newEvent" class="col-md-2 border border-dark">
@@ -105,7 +36,7 @@
             <div class="row">
                 <div class="col-md-2 border border-dark timePad" value="9">9:00 a.m.</div>
                 <div class="col-md-8 border border-dark nineAm">
-                    <input id="makeEvent-9" type="text" placeholder="WRITE EVENT HERE" class="event"
+                    <input id="makeEvent-9" type="text" placeholder="ADD YOUR EVENT" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-9"></span>
                 </div>
                 <div id="newEvent" class="col-md-2 border border-dark">
@@ -115,7 +46,7 @@
             <div class="row">
                 <div class="col-md-2 border border-dark timePad" value="10">10:00 a.m.</div>
                 <div class="col-md-8 border border-dark tenAm">
-                    <input id="makeEvent-10" type="text" placeholder="WRITE EVENT HERE" class="event"
+                    <input id="makeEvent-10" type="text" placeholder="ADD YOUR EVENT" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-10"></span>
                 </div>
                 <div id="newEvent" class="col-md-2 border border-dark">
@@ -125,7 +56,7 @@
             <div class="row">
                 <div class="col-md-2 border border-dark timePad" value="11">11:00 a.m.</div>
                 <div class="col-md-8 border border-dark elevenAm">
-                    <input id="makeEvent-11" type="text" placeholder="WRITE EVENT HERE" class="event"
+                    <input id="makeEvent-11" type="text" placeholder="ADD YOUR EVENT" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-11"></span>
                 </div>
                 <div id="newEvent" class="col-md-2 border border-dark">
@@ -135,7 +66,7 @@
             <div class="row">
                 <div class="col-md-2 border border-dark timePad" value="12">12:00 p.m.</div>
                 <div class="col-md-8 border border-dark orange twelveAm">
-                    <input id="makeEvent-12" type="text" placeholder="WRITE EVENT HERE" class="event"
+                    <input id="makeEvent-12" type="text" placeholder="ADD YOUR EVENT" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-12"></span>
                 </div>
                 <div id="newEvent" class="col-md-2 border border-dark">
@@ -145,7 +76,7 @@
             <div class="row">
                 <div class="col-md-2 border border-dark timePad" value="13">1:00 p.m.</div>
                 <div class="col-md-8 border border-dark onePm">
-                    <input id="makeEvent-13" type="text" placeholder="WRITE EVENT HERE" class="event"
+                    <input id="makeEvent-13" type="text" placeholder="ADD YOUR EVENT" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-13"></span>
                 </div>
                 <div id="newEvent" class="col-md-2 border border-dark">
@@ -155,7 +86,7 @@
             <div class="row">
                 <div class="col-md-2 border border-dark timePad" value="14">2:00 p.m.</div>
                 <div class="col-md-8 border border-dark twoPm">
-                    <input id="makeEvent-14" type="text" placeholder="WRITE EVENT HERE" class="event"
+                    <input id="makeEvent-14" type="text" placeholder="ADD YOUR EVENT" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-14"></span>
                 </div>
                 <div id="newEvent" class="col-md-2 border border-dark">
@@ -165,7 +96,7 @@
             <div class="row">
                 <div class="col-md-2 border border-dark timePad" value="15">3:00 p.m.</div>
                 <div class="col-md-8 border border-dark threePm">
-                    <input id="makeEvent-15" type="text" placeholder="WRITE EVENT HERE" class="event"
+                    <input id="makeEvent-15" type="text" placeholder="ADD YOUR EVENT" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-15"></span>
                 </div>
                 <div id="newEvent" class="col-md-2 border border-dark">
@@ -175,7 +106,7 @@
             <div class="row">
                 <div class="col-md-2 border border-dark timePad" value="16">4:00 p.m.</div>
                 <div class="col-md-8 border border-dark fourPm">
-                    <input id="makeEvent-16" type="text" placeholder="WRITE EVENT HERE" class="event"
+                    <input id="makeEvent-16" type="text" placeholder="ADD YOUR EVENT" class="event"
                         onfocus="this.value=''" value=""></input><span id="printEvent-16"></span>
                 </div>
                 <div id="newEvent" class="col-md-2 border border-dark">
@@ -184,149 +115,36 @@
             </div>
             <div class="row">
                 <div class="col-md-2 border border-dark timePad" value="17">5:00 p.m.</div>
-                <div class="col-md-8 border border-dark fivePm">
-                    <input id="makeEvent-17" type="text" placeholder="WRITE EVENT HERE" class="event"
-                        onfocus="this.value=''" value=""></input><span id="printEvent-17"></span>
+                <div class="col-md-8 border border-dark fivePm" class="event">
+                    <input id="makeEvent-17" type="text" placeholder="ADD YOUR EVENT" onfocus="this.value=''"
+                        value=""></input><span id="printEvent-17"></span>
                 </div>
                 <div id="newEvent" class="col-md-2 border border-dark">
                     <button id="commit-17" class="bigger">Add</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-2 border border-dark timePad">6:00 p.m.</div>
-                <div class="col-md-8 border border-dark sixPm">
-                    <input id="makeEvent-18" type="text" placeholder="WRITE EVENT HERE" class="event"
-                        onfocus="this.value=''" value=""></input><span id="printEvent-18"></span>
-                </div>
-                <div id="newEvent" class="col-md-2 border border-dark">
-                    <button id="commit-18" class="bigger">Add</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 border border-dark timePad">7:00 p.m.</div>
-                <div class="col-md-8 border border-dark sevenPm">
-                    <input id="makeEvent-19" type="text" placeholder="WRITE EVENT HERE" class="event"
-                        onfocus="this.value=''" value=""></input><span id="printEvent-19"></span>
-                </div>
-                <div id="newEvent" class="col-md-2 border border-dark">
-                    <button id="commit-19" class="bigger">Add</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 border border-dark timePad">8:00 p.m.</div>
-                <div class="col-md-8 border border-dark eightPm">
-                    <input id="makeEvent-20" type="text" placeholder="WRITE EVENT HERE" class="event"
-                        onfocus="this.value=''" value=""></input><span id="printEvent-20"></span>
-                </div>
-                <div id="newEvent" class="col-md-2 border border-dark">
-                    <button id="commit-20" class="bigger">Add</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 border border-dark timePad">9:00 p.m.</div>
-                <div class="col-md-8 border border-dark ninePm">
-                    <input id="makeEvent-21" type="text" placeholder="WRITE EVENT HERE" class="event"
-                        onfocus="this.value=''" value=""></input><span id="printEvent-21"></span>
-                </div>
-                <div id="newEvent" class="col-md-2 border border-dark">
-                    <button id="commit-21" class="bigger">Add</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 border border-dark timePad">10:00 p.m.</div>
-                <div class="col-md-8 border border-dark tenPm">
-                    <input id="makeEvent-22" type="text" placeholder="WRITE EVENT HERE" class="event"
-                        onfocus="this.value=''" value=""></input><span id="printEvent-22"></span>
-                </div>
-                <div id="newEvent" class="col-md-2 border border-dark">
-                    <button id="commit-22" class="bigger">Add</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 border border-dark timePad">11:00 p.m.</div>
-                <div class="col-md-8 border border-dark elevenPm">
-                    <input id="makeEvent-23" type="text" placeholder="WRITE EVENT HERE" class="event"
-                        onfocus="this.value=''" value=""></input><span id="printEvent-23"></span>
-                </div>
-                <div id="newEvent" class="col-md-2 border border-dark">
-                    <button id="commit-23" class="bigger">Add</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2 border border-dark timePad">12:00 a.m.</div>
-                <div class="col-md-8 border border-dark twelveAm">
-                    <input id="makeEvent-24" type="text" placeholder="WRITE EVENT HERE" class="event"
-                        onfocus="this.value=''" value=""></input><span id="printEvent-24"></span>
-                </div>
-                <div id="newEvent" class="col-md-2 border border-dark">
-                    <button id="commit-24" class="bigger">Add</button>
-                </div>
-            </div>
         </div>
         <script>
 
+            // Lines 127-133 creates the daily date update in jumbotron
 
             var m = moment();
             console.log(m);
             var h4 = document.getElementById("date");
             console.log(h4);
             h4.innerHTML = m.format("DD MMMM YYYY");
-            var commitBtn = document.querySelector("#commit");
-            commitBtn.addEventListener("click", function () {
-                var makeEvent = document.getElementById('makeEvent').value;
-                var printEvent = document.getElementById('printEvent');
-                printEvent.setAttribute("color", "blue");
-                printEvent.append(makeEvent);
-            });
 
-            var commitBtn2 = document.querySelector("#commit-2");
+            // Lines 137-216 are all the event listeners for the buttons
 
-            commitBtn2.addEventListener("click", function () {
-                var makeEvent2 = document.getElementById('makeEvent-2').value;
-                var printEvent2 = document.getElementById('printEvent-2');
-                printEvent2.append(makeEvent2);
-            });
-
-            var commitBtn3 = document.querySelector("#commit-3");
-
-            commitBtn3.addEventListener("click", function () {
-                var makeEvent3 = document.getElementById('makeEvent-3').value;
-                var printEvent3 = document.getElementById('printEvent-3');
-                printEvent3.append(makeEvent3);
-            });
-
-            var commitBtn4 = document.querySelector("#commit-4");
-
-            commitBtn4.addEventListener("click", function () {
-                var makeEvent4 = document.getElementById('makeEvent-4').value;
-                var printEvent4 = document.getElementById('printEvent-4');
-                printEvent4.append(makeEvent4);
-            });
-
-            var commitBtn5 = document.querySelector("#commit-5");
-
-            commitBtn5.addEventListener("click", function () {
-                var makeEvent5 = document.getElementById('makeEvent-5').value;
-                var printEvent5 = document.getElementById('printEvent-5');
-                printEvent5.append(makeEvent5);
-            });
-
-            var commitBtn6 = document.querySelector("#commit-6");
-
-            commitBtn6.addEventListener("click", function () {
-                var makeEvent6 = document.getElementById('makeEvent-6').value;
-                var printEvent6 = document.getElementById('printEvent-6');
-                printEvent6.append(makeEvent6);
-            });
-
-
-            var commitBtn7 = document.querySelector("#commit-7");
-
-            commitBtn7.addEventListener("click", function () {
-                var makeEvent7 = document.getElementById('makeEvent-7').value;
-                var printEvent7 = document.getElementById('printEvent-7');
-                printEvent7.append(makeEvent7);
-            });
+            // Check browser support
+            // if (typeof (Storage) !== "undefined") {
+            //     // Store
+            //     localStorage.getItem("lastname", "Smith");
+            //     // Retrieve
+            //     document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+            // } else {
+            //     document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+            // }
 
             var commitBtn8 = document.querySelector("#commit-8");
 
@@ -409,89 +227,11 @@
                 printEvent17.append(makeEvent17);
             });
 
-            var commitBtn18 = document.querySelector("#commit-18");
-
-            commitBtn18.addEventListener("click", function () {
-                var makeEvent18 = document.getElementById('makeEvent-18').value;
-                var printEvent18 = document.getElementById('printEvent-18');
-                printEvent18.append(makeEvent18);
-            });
-
-            var commitBtn19 = document.querySelector("#commit-19");
-
-            commitBtn19.addEventListener("click", function () {
-                var makeEvent19 = document.getElementById('makeEvent-19').value;
-                var printEvent19 = document.getElementById('printEvent-19');
-                printEvent19.append(makeEvent19);
-            });
-
-            var commitBtn20 = document.querySelector("#commit-20");
-
-            commitBtn10.addEventListener("click", function () {
-                var makeEvent20 = document.getElementById('makeEvent-20').value;
-                var printEvent20 = document.getElementById('printEvent-20');
-                printEvent20.append(makeEvent20);
-            });
-
-            var commitBtn21 = document.querySelector("#commit-21");
-
-            commitBtn21.addEventListener("click", function () {
-                var makeEvent21 = document.getElementById('makeEvent-21').value;
-                var printEvent21 = document.getElementById('printEvent-21');
-                printEvent21.append(makeEvent21);
-            });
-
-            var commitBtn22 = document.querySelector("#commit-22");
-
-            commitBtn22.addEventListener("click", function () {
-                var makeEvent22 = document.getElementById('makeEvent-22').value;
-                var printEvent22 = document.getElementById('printEvent-22');
-                printEvent22.append(makeEvent22);
-            });
-
-            var commitBtn23 = document.querySelector("#commit-23");
-
-            commitBtn23.addEventListener("click", function () {
-                var makeEvent23 = document.getElementById('makeEvent-23').value;
-                var printEvent23 = document.getElementById('printEvent-23');
-                printEvent23.append(makeEvent23);
-            });
-
-
-            var commitBtn24 = document.querySelector("#commit-24");
-
-            commitBtn24.addEventListener("click", function () {
-                var makeEvent24 = document.getElementById('makeEvent-24').value;
-                var printEvent24 = document.getElementById('printEvent-24');
-                printEvent24.append(makeEvent24);
-            });
-
             var currentTime = new Date().getHours();
 
-            var hour = document.querySelector("#hour");
-
-            hour.addEventListener("click", function() {
-                console.log(currentTime);
-            })
-
-            var firstTime = document.getElementById("first-time");
-
-            var hour1 = document.getElementById("hour1");
-
-            hour1.addEventListener("click", function() {
-                console.log("I am working");
-            });
-
             // This is loop for 1:00 a.m.
-            
-        
-            var firstHour = document.getElementsByClassName("timePad");
-           
-            // var getTime = firstHour[0].getAttribute("value");
 
-            // console.log(getTime);
-
-           $('.timePad').each(function() {
+            $('.timePad').each(function () {
                 var getTime = parseInt(this.getAttribute("value"));
                 console.log(getTime);
                 if (currentTime > getTime) {
@@ -501,34 +241,8 @@
                 } else {
                     $(this).addClass("future");
                 }
-            })
 
-            
-
-
-            // var dateTime = document.getElementsByTagName("time");
-
-
-            
-            
-            // if (currentTime > ) { 
-            //     var oneAm = document.querySelector(".oneAm");
-            //     oneAm.setAttribute("background", "grey");
-            //     console.log(dateTime);
-            // };
-
-
-
-            // function changeColor() {
-            //     var oneAm = document.querySelector(".oneAm");
-            //     oneAm.setAttribute("background", "grey");
-            //     console.log(currentTime + " " + dateTime);
-            // }
-
-            // changeColor();
-            
-            // };
-
+            });
 
         </script>
 </body>
