@@ -19,10 +19,11 @@
 <body>
     <div class="container-fluid">
         <div class="container">
-            <div class="jumbotron jumboColor">
+            <div class="jumbotron">
                 <p class="plan-text">DAY PLANNER</p>
                 <h4 id="date"></h4>
             </div>
+            <!-- Lines 27-135 contain the rows and columns for each hour of the workday in which events can be set -->
             <div class="row">
                 <div class="col-md-2 border border-dark timePad" value="8">8:00 a.m.</div>
                 <div class="col-md-8 border border-dark">
@@ -146,16 +147,15 @@
 
             // Lines 137-216 are all the event listeners for the buttons
 
-            // Check browser support
-            // if (typeof (Storage) !== "undefined") {
-            //     // Store
-            //     localStorage.getItem("lastname", "Smith");
-            //     // Retrieve
-            //     document.getElementById("result").innerHTML = localStorage.getItem("lastname");
-            // } else {
-            //     document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
-            // }
+        //     Check browser support
+        //     function renderAppointments() {
+        // storedAppointments = JSON.parse(localStorage.getItem("appointments"));
+        // if (storedAppointments !== null) {
+            
+        
 
+           // Lines 159-240 contain the event listeners to add events to each time block
+           
             var commit8 = document.querySelector("#commit-8");
 
             commit8.addEventListener("click", function () {
@@ -237,9 +237,9 @@
                 printEvent17.append(makeEvent17);
             });
 
+            // This is loop to determine whether each hour is in the past, present, or future
+            
             var currentTime = new Date().getHours();
-
-            // This is loop for 1:00 a.m.
 
             $('.timePad').each(function () {
                 var getTime = parseInt(this.getAttribute("value"));
