@@ -4,7 +4,7 @@
 
 2. At the top of the page, the date is provided and is set so that everyday, the day is updated automatically.
 
-3. If there are times currently in the time blocks, click the "Clear Events" button in order to remove the events.
+3. If there are times currently in the time blocks, click on the event printed next to input field in the 8 a.m. block in order to remove all the events.
 
 4. Each time block follows in accordance with the current time and updates to show whether or not the hour is in the past, present, or future. Grey indicates that the hour has past. Red indicates the current hour. Green indicates the following hour(s). 
 
